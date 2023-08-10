@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/1373b2524b.js" crossorigin="anonymous"></script>
+    
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mysite</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <h3 id="logo">KunFord</h3>
+            </div>
+            <div id="navlist" class="textcenter">
+                <a href="#" class="navitems">Home</a>
+                <a href="#" class="navitems">About</a>
+                <a href="#" class="navitems">Services</a>
+                <a href="#" class="navitems">Portfolio</a>
+                <a href="#" class="navitems">Pricing</a>
+                <a href="#" class="navitems">Blog</a>
+                <a href="#" class="navitems">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="banner">
+            <div id="bannerleft" class="textcenter">
+                <h1 class="primary">I am Keannu Ford</h1>
+                <h1 class="primary">A web Developer</h1>
+                <p class="bpara secondary">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim, eligendi officia omnis consequuntur
+                    maiores fugit odio pariatur aperiam natus
+                </p>
+                <button class="btn">Hire Me</button>
+                <button class="btn1">View My Portfolio</button>
+                <div id="socialmedia">
+                    <a href="#" class="social">+FACEBOOK</a>
+                    <a href="#" class="social">+TWITTER</a>
+                    <a href="#" class="social">+LINKDIN</a>
+                </div>
+            </div>
+
+        </section>
+        <section id="details">
+            <div class="mypic">
+                <img src="img/my.webp" alt="mypicture">
+            </div>
+            <div class="detail ">
+                <div class="links">
+                    <!-- <button class="details btn1" id="about" onclick=" changec(this)">About</button> -->
+                    <button class="details btn1" id="about" v-on:click="fun1(this)">About</button>
+                    <button class="details btn1" id="skill" v-on:click="fun2(this)">Skills</button>
+                    <button id="expe" class="details btn1" v-on:click="fun3(this)" >Experience</button>
+                </div>
+                <div class="exp ">
+                    <p id="para2" v-html="msg"></p>
+                    <!-- Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the
+                        coast of the Semantics, a large language ocean. -->
+
+                    <!-- <h3>I Do Web Design & Developement since I was 18 Years Old</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p> -->
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="top textcenter">
+                <h4>Services</h4>
+                <h1>This is My Expertise, The Services I'll Provide My Clients</h1>
+            </div>
+            <div class="service">
+
+                <div class="ser"><img src="img/ui.png" alt="">
+                    <h3>UI & UX Design</h3>
+                    <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+
+                    <a href="">Read more</a>
+                </div>
+
+                <div class="ser"><img src="img/code.png" alt="">
+                    <h3>Web Development</h3>
+                    <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+
+                    <a href="">Read more</a>
+                </div>
+
+                <div class="ser"><img src="img/design.png" alt="">
+                    <h3>Graphics Design</h3>
+                    <p> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+
+                    <a href="">Read more</a>
+                </div>
+            </div>
+            <div class="bottom ">
+                <h2>Have any works you want to done by me?<a href="#"> Contact Me</a></h2>
+
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.</p>
+            </div>
+        </section>
+        <section id="bottom">
+            <div class="map">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.4627230876367!2d73.7428297152634!3d33.149476980861195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fec085ec688ef%3A0xd988766d3ccdd31c!2sMirpur%20University%20of%20Science%20and%20Technology%20(MUST)!5e0!3m2!1sen!2s!4v1664959632967!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form">
+                <h1>Contact Us</h1>
+                <p>We're open for any suggestion or just to have a chat.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, praesentium.</p>
+                <fieldset>
+                    <legend>Your Message</legend>
+                    <form action="phpnoaction" method="get">
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="text" name="subject" id="sbj" placeholder="Subject">
+                        <input type="textarea" col="40" row="40" placeholder="Type Your Message">
+                        <button class="btn1" type="submit">Send Message</button>
+                    </form>
+                </fieldset>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="foot">
+            <div class="foot1">
+                <div class="footer1">
+                    <h1>Kn.Ford</h1>
+                    <p > A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                    </p>
+                </div>
+                <div class="footer1">
+                    <h1>Services</h1>
+                    <ul>
+                        <li><i class="fa-regular fa-arrow-right" ></i>Web Design</li>
+                        <li><i class="fa-regular fa-arrow-right" ></i>Graphic Design</li>
+                        <li><i class="fa-regular fa-arrow-right" ></i>Web Development</li>
+                        <li><i class="fa-regular fa-arrow-right" ></i>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="footer1">
+                    <h1>Have Any Question?</h1>
+                    <ul>
+                        <li><i class="fa-regular fa-location-dot"></i> 203 Fake St. Mountain View, San Francisco, California, USA</li>
+                        <li><i class="fa-regular fa-phone"></i> +2 392 3929 210</li>
+                        <li><i class="fa-regular fa-envelope"></i> info@yourdomain.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyr textcenter">
+                Copyright ©2022 All rights reserved | This template is made with by Colorlib
+            </div>
+        </section>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/my.js"></script>
+</body>
+
+</html>
