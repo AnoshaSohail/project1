@@ -15,7 +15,7 @@ header{
 #navbar{
     display: grid;
     grid-template-areas: "logo logo navlist navlist" ;
-   /*  justify-content: center; */
+   /*  align-content: center; */
     align-items: center;
     font-family: 'Baloo 2', cursive;
 }
@@ -61,7 +61,7 @@ position: relative;
 /* banner section */
 #banner{display: grid;
     grid-template-areas:"banner banner banner banner"  ;
-   
+   align-content: center;
     position: relative;
     height: 435px;
 }
@@ -146,7 +146,7 @@ z-index: -1; }
     "bot bot bot bot";
     
     margin: 215px;
-  
+  margin-top: 100px;
     align-items: center;
 }
 .top{
